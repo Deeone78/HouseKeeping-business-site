@@ -6,6 +6,63 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkle Clean | Professional Housekeeping</title>
+  </head>
+  <body class="bg-slate-50 font-sans text-slate-800 antialiased">
+
+    <!-- Mobile-First Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md px-4 py-3 flex items-center justify-between">
+      <div class="text-xl font-bold text-blue-600 tracking-tight">✨ SparkleClean</div>
+      <a href="tel:0123456789" class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-600 hover:bg-blue-100 transition-colors">
+        📞 Call Now
+      </a>
+    </header>
+
+    <!-- Hero / Call to Action Section -->
+    <main class="mx-auto max-w-md px-4 py-8 text-center flex flex-col justify-center min-h-[75vh]">
+      <div class="inline-block mx-auto rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 mb-4">
+        📍 Local Cleaning Experts
+      </div>
+      <h1 class="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+        A Premium Clean, <br />
+        <span class="text-blue-600">Booked From Your Phone.</span>
+      </h1>
+      <p class="mt-4 text-base text-slate-600 leading-relaxed">
+        Professional housekeepers trained to make your home shine. Fully insured, vetted, and reliable.
+      </p>
+
+      <!-- Booking Card Buttons -->
+      <div class="mt-8 space-y-3">
+        <button class="w-full rounded-xl bg-blue-600 py-3.5 text-center text-sm font-bold text-white shadow-md shadow-blue-200 hover:bg-blue-700 active:scale-[0.99] transition-all">
+          Book a Cleaning in 60s
+        </button>
+        <button class="w-full rounded-xl border border-slate-300 bg-white py-3.5 text-center text-sm font-bold text-slate-700 hover:bg-slate-50 transition-colors">
+          View Our Pricing Matrix
+        </button>
+      </div>
+
+      <!-- Quick Social Proof / Features -->
+      <div class="mt-10 grid grid-cols-3 gap-2 border-t border-slate-200 pt-6 text-left">
+        <div>
+          <div class="text-xs font-bold text-slate-900">⭐ 4.9/5 Rating</div>
+          <div class="text-[10px] text-slate-500">From 200+ homes</div>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-900">🛡️ Fully Insured</div>
+          <div class="text-[10px] text-slate-500">Total peace of mind</div>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-slate-900">🧹 Eco Products</div>
+          <div class="text-[10px] text-slate-500">Safe for kids & pets</div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
